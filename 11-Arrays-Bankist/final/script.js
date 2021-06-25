@@ -123,6 +123,7 @@ const createUsernames = function (accs) {
       .join('');
   });
 };
+
 createUsernames(accounts);
 
 const updateUI = function (acc) {
@@ -182,7 +183,6 @@ btnTransfer.addEventListener('click', function (e) {
     // Doing the transfer
     currentAccount.movements.push(-amount);
     receiverAcc.movements.push(amount);
-
     // Update UI
     updateUI(currentAccount);
   }
@@ -238,6 +238,8 @@ btnSort.addEventListener('click', function (e) {
 // LECTURES
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+
 
 /*
 /////////////////////////////////////////////////
